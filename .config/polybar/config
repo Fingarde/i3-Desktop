@@ -59,7 +59,7 @@ scroll-down = ~/bin/vol.sh -d
 type = internal/xwindow
 label = %title:0:30:...%
 format-prefix = " "
-format-prefix-foreground = ${xrdb:color6}
+format-prefix-foreground = ${xrdb:color8}
 module-margin-left = 2
 format-padding = 2
 format-background = ${colors.bg}
@@ -72,7 +72,7 @@ enable-scroll = true
 format = <label-state>
 
 label-active = ×
-label-active-foreground = ${xrdb:color6}
+label-active-foreground = ${xrdb:color8}
 label-active-background = ${colors.bg}
 label-active-padding = 1
 
