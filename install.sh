@@ -5,7 +5,7 @@ sed 's/main/main contrib non-free/g' /etc/apt/old_sources.list > /etc/apt/source
 
 apt update && apt upgrade -y
 
-apt install -y xorg sudo playerctl dunst compton i3 psmisc ksnapshot rxvt-unicode rofi xbacklight feh udiskie lightdm firefox-esr feh alsa-utils pavucontrol gstreamer1.0-pulseaudio git build-essential cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xrm-dev
+apt install -y wget xorg sudo playerctl dunst compton i3 psmisc ksnapshot rxvt-unicode rofi xbacklight feh udiskie lightdm firefox-esr feh alsa-utils pavucontrol gstreamer1.0-pulseaudio git build-essential cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xrm-dev
 
 sudo adduser fingarde sudo
 sudo adduser fingarde audio
@@ -23,7 +23,7 @@ cmake ../
 make -j$(nproc)
 sudo make install -B
 
-cd ../..
+cd ../../
 
 cp -rf bin /home/fingarde
 cp -rf .config /home/fingarde
