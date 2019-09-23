@@ -168,6 +168,7 @@ exec feh --bg-tile ~/.wall
 exec_always dunst
 exec_always redshift &
 exec --no-startup-id udiskie -ans &
+exec --no-startup-id unclutter &
 
 # cycle workspaces
 bindsym $mod+Tab workspace back_and_forth
